@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+}
+
+/* Common */
+:root {
+    --primary-color: #7264d6;
+    --primary-heading-color: #212832;
+    --primary-text-color: #696d76;
+}
+
+.container {
+    max-width: 1170px;
+    width: calc(100% - 48px);
+
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 149px;
+    height: 58px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+
+    color: #fff;
+    background: var(--primary-color);
+
+    outline: none;
+}
+
+.introduce {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    margin-bottom: 12px;
+
+    font-size: 1.6rem;
+    line-height: 1.75;
+
+    color: #696d77;
+}
+
+.introduce::before {
+    content: "";
+    display: inline-block;
+
+    width: 18px;
+    height: 2px;
+
+    background: #696d77;
+}
+
+.desc {
+    margin-top: 20px;
+
+    font-size: 1.8rem;
+    line-height: 1.67;
+
+    color: var(--primary-text-color);
+}
+
+/* Header */
+.header {
+    padding: 24px 0;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    margin-left: 46px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    padding: 8px 24px;
+
+    font-size: 1.6rem;
+    line-height: 1.75;
+
+    color: var(--primary-text-color);
+}
+
+.header__link--active {
+    font-weight: 600;
+
+    color: #212832;
+
+    position: relative;
+}
+
+.header__link--active::after {
+    content: "";
+    display: block;
+
+    width: calc(100% - 48px);
+    height: 1px;
+
+    border-radius: 99px;
+
+    background: var(--primary-color);
+
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+
+    margin-left: auto;
+}
+
+.header__btn--login {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+
+    color: #212832;
+}
+
+.header__btn--signup {
+    min-width: 113px;
+    height: 52px;
+
+    border-radius: 6px;
+
+    background: #212832;
+}
+
+/* Hero */
+.hero {
+    margin-top: 52px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__content {
+    width: 46%;
+}
+
+.hero__heading {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+
+    color: var(--primary-heading-color);
+}
+
+.hero__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 8px;
+    margin-top: 40px;
+
+    border-radius: 8px;
+
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero__email {
+    width: 100%;
+    height: 58px;
+
+    padding: 0 15px;
+    border: none;
+
+    outline: none;
+}
+
+.hero__email::placeholder {
+    font-size: 1.6rem;
+    line-height: 1.75;
+
+    color: var(--primary-text-color);
+}
+
+.hero__note {
+    margin-top: 20px;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+
+    color: var(--primary-text-color);
+}
+
+.hero__media {
+    width: 49%;
+
+    position: relative;
+}
+
+.hero-deposite {
+    display: flex;
+    align-items: center;
+
+    width: 174px;
+
+    padding: 14px 10px;
+    border-radius: 6px;
+
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+
+    position: absolute;
+    top: 21%;
+    left: 0;
+
+    z-index: 1;
+}
+
+.hero-deposite__title {
+    margin-left: 8px;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+
+    color: #31456a;
+}
+
+.hero-deposite__price {
+    margin-left: auto;
+
+    font-size: 1.4rem;
+    line-height: 1;
+
+    color: #4ab5e3;
+}
+
+.hero-app {
+    width: 52%;
+
+    padding: 40px 11px 30px;
+    border: 12px solid #212832;
+    border-radius: 40px;
+    margin-left: 18%;
+
+    background: #fff;
+
+    position: relative;
+}
+
+.hero-app__notch {
+    width: 49%;
+    height: 36px;
+
+    border-radius: 0px 0px 18px 18px;
+
+    background: #3c2f60;
+
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card {
+    width: 100%;
+
+    padding: 16px;
+    border-radius: 20px;
+
+    background: linear-gradient(76deg, #8679e4 11.52%, #7264d6 70.78%);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.card__decor {
+    position: absolute;
+}
+
+.card__decor--top {
+    top: 0;
+    left: 1px;
+}
+
+.card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__heading {
+    font-size: 1.4rem;
+
+    color: #fff;
+
+    position: relative;
+    z-index: 1;
+}
+
+.card__circles {
+    display: flex;
+
+    position: relative;
+    z-index: 1;
+}
+
+.card__circle {
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+
+    mix-blend-mode: overlay;
+}
+
+.card__circle:first-child {
+    background: #fe6565;
+}
+
+.card__circle:last-child {
+    margin-left: -9px;
+
+    background: #feef65;
+}
+
+.card__price {
+    margin-top: 2px;
+
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    color: #fff;
+}
+
+.card__bottom {
+    display: flex;
+    column-gap: 12px;
+
+    margin-top: 32px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.card__title {
+    color: #fff;
+}
+
+.card__info {
+    margin-top: 5px;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: #fff;
+}
+
+.card__decor--bottom {
+    right: -4px;
+    bottom: -1px;
+}
+
+.hero-app__topic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 24px;
+}
+
+.hero-app__heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    color: #31456a;
+}
+
+.hero-app__filter {
+    border: none;
+    outline: none;
+
+    background: transparent;
+}
+
+.hero-app__list {
+    margin-top: 28px;
+}
+
+.hero-app__item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-app__item + .hero-app__item {
+    margin-top: 28px;
+}
+
+.hero-app__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 8px;
+
+    /* box-shadow: -4px -2px 16px 0px #fff,
+        4px 2px 16px 0px rgba(136, 165, 191, 0.48); */
+}
+
+.hero-app__item:first-child .hero-app__wrapper {
+    background: rgba(74, 181, 227, 0.1);
+}
+
+.hero-app__item:nth-child(2) .hero-app__wrapper {
+    background: rgba(218, 100, 100, 0.1);
+}
+
+.hero-app__item:nth-child(3) .hero-app__wrapper {
+    background: rgba(67, 159, 144, 0.1);
+}
+
+.hero-app__item:last-child .hero-app__wrapper {
+    background: rgba(114, 100, 214, 0.1);
+}
+
+.hero-app__details {
+    margin-left: 14px;
+}
+
+.hero-app__title,
+.hero-app__price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+
+    color: var(--primary-heading-color);
+}
+
+.hero-app__desc,
+.hero-app__date {
+    margin-top: 6px;
+
+    line-height: 1;
+
+    color: var(--primary-text-color);
+}
+
+.hero-app__statistical {
+    margin-left: auto;
+
+    text-align: right;
+}
+
+.hero-interest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    background: #da6464;
+
+    position: absolute;
+    top: 23%;
+    right: 0;
+}
+
+.hero-interest__percent,
+.hero-interest__title {
+    text-align: center;
+
+    color: #fff;
+}
+
+.hero-interest__percent {
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-interest__title {
+    font-size: 1.6rem;
+}
+
+.hero-secured-funds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 11px;
+
+    width: 124px;
+    height: 68px;
+
+    border-radius: 10px;
+
+    background: #439f90;
+
+    position: absolute;
+    right: 18%;
+    bottom: 11%;
+}
+
+.hero-secured-funds__price,
+.hero-secured-funds__title {
+    line-height: 1;
+
+    color: #fff;
+}
+
+.hero-secured-funds__price {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.hero-secured-funds__title {
+    margin-top: 5px;
+
+    font-size: 0.8rem;
+}
