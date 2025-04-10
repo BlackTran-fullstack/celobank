@@ -6,6 +6,8 @@
 
 html {
     font-size: 62.5%;
+
+    scroll-behavior: smooth;
 }
 
 body {
@@ -95,6 +97,54 @@ a {
     line-height: 1.25;
 
     color: var(--primary-heading-color);
+}
+
+@keyframes leftRight {
+    0% {
+        transform: translateX(30px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes topBottom {
+    0% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rightLeft {
+    0% {
+        transform: translateX(-30px);
+    }
+    50% {
+        transform: translateX(-15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Header */
@@ -269,6 +319,8 @@ a {
     left: 0;
 
     z-index: 1;
+
+    animation: leftRight 1.5s linear infinite alternate;
 }
 
 .hero-deposite__title {
@@ -525,6 +577,8 @@ a {
     position: absolute;
     top: 23%;
     right: 0;
+
+    animation: topBottom 1.5s linear infinite alternate;
 }
 
 .hero-interest__percent,
@@ -559,6 +613,8 @@ a {
     position: absolute;
     right: 18%;
     bottom: 11%;
+
+    animation: rightLeft 1.5s linear infinite alternate;
 }
 
 .hero-secured-funds__price,
@@ -609,6 +665,8 @@ a {
     position: absolute;
     top: 12%;
     right: 28%;
+
+    animation: topBottom 1.5s linear infinite alternate;
 }
 
 .works__logo-wrapper::before {
@@ -697,6 +755,8 @@ a {
     position: absolute;
     right: 0;
     bottom: 16%;
+
+    animation: leftRight 1.5s linear infinite alternate;
 }
 
 .works-congratulations__icon-wrapper {
@@ -868,6 +928,8 @@ a {
     right: 0;
 
     z-index: 2;
+
+    animation: leftRight 1.5s linear infinite alternate;
 }
 
 .feature-send-money__wrapper {
@@ -976,6 +1038,8 @@ a {
     position: absolute;
     right: 0;
     bottom: 0;
+
+    animation: topBottom 1.5s linear infinite alternate;
 }
 
 .feature-income__wrapper {
@@ -1152,6 +1216,8 @@ a {
     bottom: 37%;
 
     z-index: 1;
+
+    animation: topBottom 1.5s linear infinite alternate;
 }
 
 .feature__content:nth-of-type(2) {
@@ -1511,10 +1577,14 @@ a {
 
 .download__icon:first-of-type {
     left: 10%;
+
+    animation: leftRight 2s linear infinite alternate;
 }
 
 .download__icon:nth-of-type(2) {
     right: 10%;
+
+    animation: rightLeft 2s linear infinite alternate;
 }
 
 .download__icon:nth-of-type(3),
@@ -1524,10 +1594,14 @@ a {
 
 .download__icon:nth-of-type(3) {
     left: 14%;
+
+    animation: leftRight 1s linear infinite alternate;
 }
 
 .download__icon:last-of-type {
     right: 14%;
+
+    animation: rightLeft 1s linear infinite alternate;
 }
 
 /* Footer */

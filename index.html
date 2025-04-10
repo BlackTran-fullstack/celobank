@@ -39,6 +39,17 @@
 
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Animations -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <header class="header">
@@ -52,7 +63,7 @@
                         <ul class="header__list">
                             <li class="header__item">
                                 <a
-                                    href="#!"
+                                    href=""
                                     class="header__link header__link--active"
                                 >
                                     Home
@@ -60,15 +71,19 @@
                             </li>
 
                             <li class="header__item">
-                                <a href="#!" class="header__link">Products</a>
+                                <a href="#product" class="header__link"
+                                    >Products</a
+                                >
                             </li>
 
                             <li class="header__item">
-                                <a href="#!" class="header__link">Features</a>
+                                <a href="#feature" class="header__link">
+                                    Features
+                                </a>
                             </li>
 
                             <li class="header__item">
-                                <a href="#!" class="header__link">Blog</a>
+                                <a href="#blog" class="header__link">Blog</a>
                             </li>
                         </ul>
                     </nav>
@@ -86,7 +101,12 @@
             <section class="hero">
                 <div class="container">
                     <section class="hero__inner">
-                        <section class="hero__content">
+                        <section
+                            class="hero__content"
+                            data-aos="fade-right"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <p class="introduce">Digital Smart Wallet</p>
 
                             <h1 class="hero__heading">
@@ -123,7 +143,12 @@
                             </p>
                         </section>
 
-                        <div class="hero__media">
+                        <div
+                            class="hero__media"
+                            data-aos="fade-left"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <article class="hero-deposite">
                                 <figure>
                                     <img
@@ -354,10 +379,15 @@
                 </div>
             </section>
 
-            <section class="works">
+            <section id="product" class="works">
                 <div class="container">
                     <section class="works__inner">
-                        <div class="works__media">
+                        <div
+                            class="works__media"
+                            data-aos="fade-right"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <figure class="works__logo-wrapper">
                                 <img
                                     src="./assets/img/works-logo.svg"
@@ -397,7 +427,12 @@
                             </article>
                         </div>
 
-                        <section class="works__content">
+                        <section
+                            class="works__content"
+                            data-aos="fade-left"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <p class="introduce">Digital Smart Wallet</p>
 
                             <h2 class="sub-title works__heading">
@@ -447,10 +482,15 @@
                 </div>
             </section>
 
-            <section class="feature">
+            <section id="feature" class="feature">
                 <div class="container">
                     <section class="feature__inner">
-                        <section class="feature__content">
+                        <section
+                            class="feature__content"
+                            data-aos="fade-right"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <p class="introduce">Digital Smart Wallet</p>
 
                             <h2 class="sub-title feature__heading">
@@ -476,7 +516,12 @@
                             </a>
                         </section>
 
-                        <div class="feature__media">
+                        <div
+                            class="feature__media"
+                            data-aos="fade-left"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <article class="feature-send-money">
                                 <figure class="feature-send-money__wrapper">
                                     <img
@@ -565,7 +610,12 @@
                             </div>
                         </div>
 
-                        <div class="feature__media">
+                        <div
+                            class="feature__media"
+                            data-aos="fade-right"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <figure class="feature__wrapper">
                                 <img
                                     src="./assets/img/feature-image.png"
@@ -634,7 +684,12 @@
                             </figure>
                         </div>
 
-                        <section class="feature__content">
+                        <section
+                            class="feature__content"
+                            data-aos="fade-left"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <p class="introduce">Digital Smart Wallet</p>
 
                             <h2 class="sub-title feature__heading">
@@ -669,18 +724,25 @@
 
             <section class="review">
                 <div class="container">
-                    <p class="introduce review__introduce">Our Testimonial</p>
+                    <p class="introduce review__introduce" data-aos="zoom-in">
+                        Our Testimonial
+                    </p>
 
-                    <h2 class="sub-title review__heading">What Clients Says</h2>
+                    <h2 class="sub-title review__heading" data-aos="zoom-in">
+                        What Clients Says
+                    </h2>
 
-                    <p class="desc review__desc">
+                    <p class="desc review__desc" data-aos="zoom-in">
                         Read what clients says about us and about our online
                         banking services that may inspire you
                     </p>
 
                     <div class="review__list">
                         <div class="review__items">
-                            <article class="review-item">
+                            <article
+                                class="review-item"
+                                data-aos="zoom-in-right"
+                            >
                                 <blockquote class="review-item__quote">
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
@@ -706,7 +768,10 @@
                                 </section>
                             </article>
 
-                            <article class="review-item">
+                            <article
+                                class="review-item"
+                                data-aos="zoom-in-left"
+                            >
                                 <blockquote class="review-item__quote">
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
@@ -744,11 +809,13 @@
                 </div>
             </section>
 
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="container">
-                    <p class="introduce blog__introduce">Our Blog</p>
+                    <p class="introduce blog__introduce" data-aos="fade-up">
+                        Our Blog
+                    </p>
 
-                    <section class="blog__top">
+                    <section class="blog__top" data-aos="fade-up">
                         <section class="blog__information">
                             <h2 class="sub-title">Get The Updates</h2>
 
@@ -763,7 +830,11 @@
                     </section>
 
                     <section class="blog__content">
-                        <article class="blog-item">
+                        <article
+                            class="blog-item"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <figure class="blog-item__media">
                                 <img
                                     src="./assets/img/blog-image-01.jpg"
@@ -788,7 +859,11 @@
                             </section>
                         </article>
 
-                        <article class="blog-item">
+                        <article
+                            class="blog-item"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <figure class="blog-item__media">
                                 <img
                                     src="./assets/img/blog-image-02.jpg"
@@ -813,7 +888,11 @@
                             </section>
                         </article>
 
-                        <article class="blog-item">
+                        <article
+                            class="blog-item"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <figure class="blog-item__media">
                                 <img
                                     src="./assets/img/blog-image-03.jpg"
@@ -838,7 +917,11 @@
                             </section>
                         </article>
 
-                        <article class="blog-item">
+                        <article
+                            class="blog-item"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-center"
+                        >
                             <figure class="blog-item__media">
                                 <img
                                     src="./assets/img/blog-image-04.jpg"
@@ -866,7 +949,7 @@
                 </div>
             </section>
 
-            <section class="download">
+            <section class="download" data-aos="flip-down">
                 <div class="container">
                     <section class="download__inner">
                         <p class="introduce download__introduce">Our App</p>
@@ -1018,5 +1101,10 @@
                 © 2020 Ligft Media All rights reserved.
             </div>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
