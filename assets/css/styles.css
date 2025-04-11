@@ -1641,6 +1641,10 @@ a {
     opacity: 0.75;
 }
 
+.footer__link:hover {
+    text-decoration: underline;
+}
+
 .footer__item + .footer__item {
     margin-top: 24px;
 }
@@ -1687,6 +1691,8 @@ a {
     height: 100%;
 
     background: var(--primary-color);
+
+    cursor: pointer;
 }
 
 .footer__info {
